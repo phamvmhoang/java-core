@@ -52,4 +52,13 @@ public class Dish {
         new Dish("salmon", false, 450, Type.FISH)
     );
 
+    // This list is sorted in ascending order of number of calories!
+    public static final List<Dish> specialMenu = Arrays.asList(
+        new Dish("season fruit", true, 120, Dish.Type.OTHER),
+        new Dish("prawns", false, 300, Dish.Type.FISH),
+        new Dish("rice", true, 350, Dish.Type.OTHER),
+        new Dish("chicken", false, 400, Dish.Type.MEAT),
+        new Dish("french fries", true, 530, Dish.Type.OTHER)
+    );
+
 }
