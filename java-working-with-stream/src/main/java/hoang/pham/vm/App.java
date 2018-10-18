@@ -24,5 +24,10 @@ public class App {
 //        MapStream.quiz521();
         //MapStream.quiz522();
 //        MapStream.quiz523();
+//        FindAndMatchStream.hasVegetarian(menu);
+        //FindAndMatchStream.allBelow1000(menu);
+//        FindAndMatchStream.allAbove1000(menu);
+//        FindAndMatchStream.findAnyDishWithVegaterian(menu);
+        FindAndMatchStream.findFirstNumber();
     }
 }
