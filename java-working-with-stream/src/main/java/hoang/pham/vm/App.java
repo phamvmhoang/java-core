@@ -8,7 +8,7 @@ public class App {
 
         List<Dish> menu = Dish.menu;
         List<String> words = Arrays.asList("Pham", "Vu", "Minh", "Hoang");
-
+        List<Integer> numbers = Arrays.asList(4,5,3,9);
         /*
         FilterStream.filterWithPredicate(menu);
         FilterStream.filterUniqueElement();*/
@@ -28,6 +28,11 @@ public class App {
         //FindAndMatchStream.allBelow1000(menu);
 //        FindAndMatchStream.allAbove1000(menu);
 //        FindAndMatchStream.findAnyDishWithVegaterian(menu);
-        FindAndMatchStream.findFirstNumber();
+        //FindAndMatchStream.findFirstNumber();
+        //ReduceStream.sum(numbers);
+        //ReduceStream.multiple(numbers);
+        //ReduceStream.max(numbers);
+        //ReduceStream.min(numbers);
+        ReduceStream.countDish(menu);
     }
 }
