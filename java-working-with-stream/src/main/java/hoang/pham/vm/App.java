@@ -1,5 +1,8 @@
 package hoang.pham.vm;
 
+import hoang.pham.vm.domains.Trader;
+import hoang.pham.vm.domains.Transaction;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -33,6 +36,31 @@ public class App {
         //ReduceStream.multiple(numbers);
         //ReduceStream.max(numbers);
         //ReduceStream.min(numbers);
-        ReduceStream.countDish(menu);
+        //ReduceStream.countDish(menu);
+
+        Trader raoul = new Trader("Raoul", "Cambridge");
+        Trader mario = new Trader("Mario","Milan");
+        Trader alan = new Trader("Alan","Cambridge");
+        Trader brian = new Trader("Brian","Cambridge");
+        List<Trader> traders = Arrays.asList(raoul,mario,alan,brian);
+        List<Transaction> transactions = Arrays.asList(
+                new Transaction(brian, 2011, 300),
+                new Transaction(raoul, 2012, 1000),
+                new Transaction(raoul, 2011, 400),
+                new Transaction(mario, 2012, 710),
+                new Transaction(mario, 2012, 700),
+                new Transaction(alan, 2012, 950)
+        );
+
+        //StreamInAction.findAllTransactionIn2001OrderByValue(transactions);
+        //StreamInAction.allUniqueCitiesTraderWork(transactions);
+        //StreamInAction.findAllTradersFromCity(transactions,"Cambridge");
+        //StreamInAction.traderNameSorted(transactions);
+        //StreamInAction.isExistTraderInCity(transactions,"Milan");
+        //StreamInAction.findTransactionFromCity(transactions,"Cambridge");
+        //StreamInAction.findHighestTransaction(transactions);
+        StreamInAction.findSmallestTransaction(transactions);
+
+
     }
 }
