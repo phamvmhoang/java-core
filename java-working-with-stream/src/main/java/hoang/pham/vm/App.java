@@ -1,5 +1,6 @@
 package hoang.pham.vm;
 
+import hoang.pham.vm.domains.NumericStreams;
 import hoang.pham.vm.domains.Trader;
 import hoang.pham.vm.domains.Transaction;
 
@@ -59,8 +60,13 @@ public class App {
         //StreamInAction.isExistTraderInCity(transactions,"Milan");
         //StreamInAction.findTransactionFromCity(transactions,"Cambridge");
         //StreamInAction.findHighestTransaction(transactions);
-        StreamInAction.findSmallestTransaction(transactions);
-
-
+        //StreamInAction.findSmallestTransaction(transactions);
+        //NumericStreams.calculateCalories(menu);
+        //NumericStreams.numericRangeExample();
+        //NumericStreams.findPythagoreanTriples();
+        //BuildingStream.streamsFromValues();
+        //BuildingStream.streamFromNullable();
+        //BuildingStream.quiz54Iterate();
+        BuildingStream.quiz54Generate();
     }
 }
