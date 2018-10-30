@@ -26,8 +26,12 @@ public class App {
         //GroupingSample.dishNamesByType(dishes);
         //GroupingSample.multiLevelGrouping(dishes);
         //GroupingSample.collectDataInSubgroups(dishes);
-        GroupingSample.getTotalCaloriesByType(dishes);
-
+        //GroupingSample.getTotalCaloriesByType(dishes);
+        //PartitioningSample.partitionedMenu(dishes);
+        //PartitioningSample.vegetarianDishesByType(dishes);
+        //PartitioningSample.mostCaloricPartitionedByVegetarian(dishes);
+        //PartitioningSample.quiz62(dishes);
+        PartitioningSample.partitionPrimes(10);
     }
 
 }
