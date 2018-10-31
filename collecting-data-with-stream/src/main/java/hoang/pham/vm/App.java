@@ -4,6 +4,7 @@ import hoang.pham.vm.domain.Dish;
 import hoang.pham.vm.domain.Transaction;
 
 import java.util.List;
+import java.util.stream.LongStream;
 
 public class App {
 
@@ -31,7 +32,17 @@ public class App {
         //PartitioningSample.vegetarianDishesByType(dishes);
         //PartitioningSample.mostCaloricPartitionedByVegetarian(dishes);
         //PartitioningSample.quiz62(dishes);
-        PartitioningSample.partitionPrimes(10);
+        //PartitioningSample.partitionPrimes(10);
+        //System.out.println(CollectorInterface.partitionPrimesWithCustomCollector(10));
+        long fastest = Long.MAX_VALUE;
+        for (int i = 0; i < 10; i++) {
+            long start = System.nanoTime();
+            CollectorInterface.partitionPrimesWithCustomCollector(1000000);
+            //PartitioningSample.partitionPrimes(1000000);
+            long duration = (System.nanoTime() - start)/1000000;
+            if (duration < fastest) fastest = duration;
+        }
+        System.out.println("Fastest execution done in " + fastest + " msecs");
     }
 
 }

@@ -76,7 +76,7 @@ public class PartitioningSample {
         Map<Boolean, List<Integer>> partitionPrimes = IntStream.rangeClosed(2,n)
                 .boxed()
                 .collect(partitioningBy((value -> isPrime(value))));
-        System.out.println(partitionPrimes);
+        //System.out.println(partitionPrimes);
     }
 
 }
